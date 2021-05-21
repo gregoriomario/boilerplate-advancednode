@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const passport = require('passport');
 const bcrypt = require('bcrypt');
 const { Passport } = require('passport');

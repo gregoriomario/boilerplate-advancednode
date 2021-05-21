@@ -32,9 +32,6 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 
-
-// has a password
-
 myDB(async (client)=>{
   const myDatabase = await client.db('database').collection('users');
   routes(app, myDatabase)
